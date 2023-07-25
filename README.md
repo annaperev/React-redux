@@ -41,3 +41,49 @@ or
 - State is like a variable in React
 - State is used to store data that changes over time
 - Whenever state changes, React automatically updates content on the screen
+
+### Creating React project
+
+#### Generating a Project
+
+```
+npx create-react-app <project name>
+```
+
+#### To start your project up
+
+- Change into your project folder
+- Run
+
+   ```
+   npm start
+   ```
+
+#### To view your project
+
+Open your browser and navigate to
+localhost:3000
+
+#### To stop your project
+
+Press
+Control+C
+
+### What is Create React App?
+
+![Alt text](readme/8EB3F920-758F-4B35-BE10-39237C079247.png)
+
+transpiling
+
+![Alt text](readme/32753077-5B2B-4F2D-B15A-84415240CE86.png)
+
+Over all created with  files and folder
+
+#### Files in React project
+
+- index.js - First file that gets executed when our app runs
+- index.html - Skeleton for the React app
+- package.json - Lists dependencies our app needs
+- package-lock.json - Lists dependencies our app needs
+- node-modules - Contains dependencies our app needs
+![Alt text](readme/9AC4427F-F1C4-425A-A219-DCE209325B26.png)
