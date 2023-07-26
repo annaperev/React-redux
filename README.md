@@ -87,3 +87,30 @@ Over all created with  files and folder
 - package-lock.json - Lists dependencies our app needs
 - node-modules - Contains dependencies our app needs
 ![Alt text](readme/9AC4427F-F1C4-425A-A219-DCE209325B26.png)
+
+### In index.js
+
+```js
+// 1) Import the React and ReactDom libraries
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+// 2) Get a reference to the div with ID root
+const el = document.getElementById('root');
+
+// 3) TELL React to take control of that element
+const root = ReactDOM.createRoot(el);
+
+// 4) Create a component
+function App() {
+  return <h1>Hi there!</h1>;
+}
+
+// 5) Show the component on the screen
+root.render(<App />);
+```
+
+1. React and ReactDom
+   - React - Library that defines what a component is and how multiple components work together
+   - ReactDOM - Library that knows how to get a component to show up in the browser
+2. index.html is the first file wich is loaded to the browser, in index.html we have a div with id="root", and we need to give a reference to this div
