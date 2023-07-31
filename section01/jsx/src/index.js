@@ -9,13 +9,31 @@ const el = document.getElementById('root');
 const root = ReactDOM.createRoot(el);
 
 // 4) Create a component
+
+//how it was in html
+// function App() {
+//   return (
+//     <div class="wrapper">
+//       <textarea
+//         readonly="true"
+//         maxlength="3"
+//         spellcheck="true"
+//         style="background-color: gray;"
+//       />
+//     </div>
+//   );   
+// }
+
 function App() {
-  const name = 'Samantha';
-  const age = 30;
   return (
-    <h1>
-      Hi there! My name is {name}. My age is {age}
-    </h1>
+    <div className="wrapper">
+      <textarea
+        readOnly
+        maxLength={3}
+        spellCheck
+        style={{ backgroundColor: 'gray' }}
+      />
+    </div>
   );
 }
 

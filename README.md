@@ -88,7 +88,7 @@ Over all created with  files and folder
 - node-modules - Contains dependencies our app needs
 ![Alt text](readme/9AC4427F-F1C4-425A-A219-DCE209325B26.png)
 
-### In index.js
+#### In index.js
 
 ```js
 // 1) Import the React and ReactDom libraries
@@ -114,3 +114,21 @@ root.render(<App />);
    - React - Library that defines what a component is and how multiple components work together
    - ReactDOM - Library that knows how to get a component to show up in the browser
 2. index.html is the first file wich is loaded to the browser, in index.html we have a div with id="root", and we need to give a reference to this div
+
+```
+<h1>Hi there!</h1>
+```
+
+Writing this doesn't make anything show up in the browser automatically
+
+This creates an **instruction** for React, telling it to make an element
+
+We have to **return** it from a component for React to use it
+
+### Convertin HTML to JSX
+
+- All prop names follow camelCase
+- Number attributes use curly braces
+- Boolean 'true' can be written with just the property name. 'False' should be written with curly braces
+- The 'class' attribute is written as 'className'
+- In-line styles are provided as object (no as lines how it is in HTML)
