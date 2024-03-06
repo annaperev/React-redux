@@ -1,3 +1,24 @@
+- [So what's React all about?](#so-whats-react-all-about)
+  - [React](#react)
+  - [React components](#react-components)
+  - [JSX](#jsx)
+- [How does a React app start up?](#how-does-a-react-app-start-up)
+- [What were the 'useState' functions?](#what-were-the-usestate-functions)
+- [Creating React project](#creating-react-project)
+  - [Generating a Project](#generating-a-project)
+  - [To start your project up](#to-start-your-project-up)
+  - [To view your project](#to-view-your-project)
+  - [To stop your project](#to-stop-your-project)
+- [What is Create React App?](#what-is-create-react-app)
+  - [Files in React project](#files-in-react-project)
+  - [In index.js](#in-indexjs)
+- [Typical Component Layouts](#typical-component-layouts)
+- [JSX](#jsx)  
+  - [Printing JavaScript Variables in JSX](#printing-javascript-variables-in-jsx)
+  - [Customizing Elements with Props](#customizing-elements-with-props)
+  - [Converting HTML to JSX](#converting-html-to-jsx)
+
+
 # React-redux
 https://www.udemy.com/course/react-redux/ by Stephen Grider
 
@@ -25,15 +46,16 @@ or
 ### How does a React app start up?
 
 1. All of your project's JS files are 'bundled' together into a single file, then placed onto a server
-![Alt text](readme/A9BF1CC1-362E-4AAD-9C44-82ECC9C0CEEB.png)
+<img src="readme/A9BF1CC1-362E-4AAD-9C44-82ECC9C0CEEB.png" width="600">
 2. User makes a request to the server and gets an HTML file + the bundle
-![Alt text](readme/9D4F01C4-D21A-466A-8F7B-C7108FE62647.png)
+<img src="readme/9D4F01C4-D21A-466A-8F7B-C7108FE62647.png" width="600">
 3. User's browser executes your code
    - Find the div with id of 'root' in the DOM
    - Tell React to take control of that element
    - Tell React to get JSX from the App component, turn it into HTML, and show it in the root
 
-   ![Alt text](readme/C374360E-BABD-47BF-9E2A-5634CCA10174.png)
+
+   <img src="readme/C374360E-BABD-47BF-9E2A-5634CCA10174.png" width="600">
 
 ### What were the 'useState' functions?
 
@@ -71,11 +93,11 @@ Control+C
 
 ### What is Create React App?
 
-![Alt text](readme/8EB3F920-758F-4B35-BE10-39237C079247.png)
+<img src="readme/8EB3F920-758F-4B35-BE10-39237C079247.png" width="600">
 
 transpiling
 
-![Alt text](readme/32753077-5B2B-4F2D-B15A-84415240CE86.png)
+<img src="readme/32753077-5B2B-4F2D-B15A-84415240CE86.png" width="600">
 
 Over all created with  files and folder
 
@@ -86,7 +108,9 @@ Over all created with  files and folder
 - package.json - Lists dependencies our app needs
 - package-lock.json - Lists dependencies our app needs
 - node-modules - Contains dependencies our app needs
-![Alt text](readme/9AC4427F-F1C4-425A-A219-DCE209325B26.png)
+
+The vast majority of these files are not actually required to run a React application:
+<img src="readme/9AC4427F-F1C4-425A-A219-DCE209325B26.png" width="600">
 
 #### In index.js
 
@@ -125,10 +149,38 @@ This creates an **instruction** for React, telling it to make an element
 
 We have to **return** it from a component for React to use it
 
-### Convertin HTML to JSX
+### Typical Component Layouts
 
+<img src="readme/screenshot-www.udemy.com-2024.03.05-21_49_46.png" width="600">
+
+### JSX 
+
+#### Printing JavaScript Variables in JSX
+<img src="readme/screenshot-www.udemy.com-2024.03.05-21_26_21.png" width="600">
+
+
+<img src="readme/screenshot-www.udemy.com-2024.03.05-21_42_56.png" width="600">
+
+#### Customizing Elements with Props
+
+<img src="readme/screenshot-www.udemy.com-2024.03.05-22_08_41.png " width="600">
+
+<img src="readme/screenshot-www.udemy.com-2024.03.05-22_02_38.png " width="600">
+
+#### Converting HTML to JSX
+
+JSX:
 - All prop names follow camelCase
 - Number attributes use curly braces
 - Boolean 'true' can be written with just the property name. 'False' should be written with curly braces
+<img src="readme/screenshot-www.udemy.com-2024.03.06-20_16_33.png " width="600">
 - The 'class' attribute is written as 'className'
 - In-line styles are provided as object (no as lines how it is in HTML)
+<img src="readme/screenshot-www.udemy.com-2024.03.06-20_21_22.png" width="600">
+
+https://babeljs.io/repl
+
+
+
+
+
