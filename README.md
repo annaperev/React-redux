@@ -182,5 +182,9 @@ https://babeljs.io/repl
 
 
 
+# Building reusable components
 
+### Props system 
+
+<img src="readme/screenshot-www.udemy.com-2024.03.21-08_09_22.png" width="600">
 
