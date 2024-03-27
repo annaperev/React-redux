@@ -1,5 +1,4 @@
-function ProfileCard(props) {
-    const { title, handle } = props;
+function ProfileCard({ title, handle }) {
 
     return (
         <div>
