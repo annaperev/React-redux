@@ -17,6 +17,9 @@
   - [Printing JavaScript Variables in JSX](#printing-javascript-variables-in-jsx)
   - [Customizing Elements with Props](#customizing-elements-with-props)
   - [Converting HTML to JSX](#converting-html-to-jsx)
+- [Building reusable components](#building-reusable-components)
+  - [Props system](#props-system)
+  - [Including image](#including-image)
 
 
 # React-redux
@@ -187,4 +190,8 @@ https://babeljs.io/repl
 ### Props system 
 
 <img src="readme/screenshot-www.udemy.com-2024.03.21-08_09_22.png" width="600">
+
+
+### Including image
+<img src="readme/screenshot-www.udemy.com-2024.03.27-22_02_35.png" width="600">
 
