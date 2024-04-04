@@ -20,6 +20,7 @@
 - [Building reusable components](#building-reusable-components)
   - [Props system](#props-system)
   - [Including image](#including-image)
+  - [Adding CSS Libraries with NPM](#adding-css-libraries-with-npm)
 
 
 # React-redux
@@ -195,3 +196,12 @@ https://babeljs.io/repl
 ### Including image
 <img src="readme/screenshot-www.udemy.com-2024.03.27-22_02_35.png" width="600">
 
+### Review on how CSS Works
+
+<img src="readme/screenshot-www.udemy.com-2024.03.30-13_06_47.png" width="600">
+
+### Adding CSS Libraries with NPM
+
+```shell
+npm install bulma
+```
