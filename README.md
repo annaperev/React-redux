@@ -22,6 +22,8 @@
   - [Including image](#including-image)
   - [Adding CSS Libraries with NPM](#adding-css-libraries-with-npm)
 
+- [State: How to change the app](#state-how-to-change-the-app)
+  - [Event system](#event-system)
 
 # React-redux
 https://www.udemy.com/course/react-redux/ by Stephen Grider
@@ -205,3 +207,21 @@ https://babeljs.io/repl
 ```shell
 npm install bulma
 ```
+
+
+# State: How to change the app
+### Event system
+
+<img src="readme/screenshot-www.udemy.com-2024.04.05-09_31_59.png " width="300">
+
+old documentation about events https://react.dev/reference/react-dom/components/common#event-handler new documentation (info is the same) https://react.dev/reference/react-dom/components/common#event-handler 
+
+<img src="readme/screenshot-www.udemy.com-2024.04.05-09_49_47.png" width="300">
+
+
+Event handler or callback function = function which is called automatically by some other piece of code
+
+
+Most common events:
+
+<img src="readme/screenshot-www.udemy.com-2024.04.09-09_34_48.png " width="300">
