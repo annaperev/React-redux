@@ -24,6 +24,8 @@
 
 - [State: How to change the app](#state-how-to-change-the-app)
   - [Event system](#event-system)
+  - [State](#state)
+  - [Array destructuring](#array-destructuring)
 
 # React-redux
 https://www.udemy.com/course/react-redux/ by Stephen Grider
@@ -225,3 +227,19 @@ Event handler or callback function = function which is called automatically by s
 Most common events:
 
 <img src="readme/screenshot-www.udemy.com-2024.04.09-09_34_48.png " width="300">
+
+### State
+
+<img src="readme/screenshot-www.udemy.com-2024.04.12-09_48_44.png " width="500">
+
+
+<img src="readme/screenshot-www.udemy.com-2024.04.12-09_53_16.png " width="600">
+
+Anytime that we've got some piece of information that is gonna change over time we are going to make use of this useState function.
+<img src="readme/screenshot-www.udemy.com-2024.04.12-09_54_07.png" width="600">
+
+A single component can have zero calls to useState.
+If you have any more than four that is usually a sign that you need to kind of divide up your app a little bit more.
+
+Every single time that we call useState that it means that we are defining a new piece of data that is gonna change over time. And whenever that data changes we want to re-render the component.
+
