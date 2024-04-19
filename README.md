@@ -243,3 +243,32 @@ If you have any more than four that is usually a sign that you need to kind of d
 
 Every single time that we call useState that it means that we are defining a new piece of data that is gonna change over time. And whenever that data changes we want to re-render the component.
 
+### Array destructuring
+js feature
+
+```js
+function App() {
+  function makeArray() {
+    return [1, 10, 32, 40];
+  }
+
+  const myArray = makeArray();
+  const firstElement = myArray[0];
+  const secondElement = myArray[1];
+  console.log(firstElement, secomdElement);
+}
+```
+Array destructuring allows to do this far more compact way
+
+```js
+function App() {
+  function makeArray() {
+    return [1, 10, 32, 40];
+  }
+
+  const [firstElement, secomdElement] = makeArray();
+  console.log(firstElement, secomdElement);
+}
+```
+
+'[ ]' do not create the array, 
