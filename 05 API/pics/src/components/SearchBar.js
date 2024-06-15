@@ -1,15 +1,16 @@
-// ({ onSubmit }) - this is destructuring the props object to get the onSubmit functiongit 
+// ({ onSubmit }) - this is destructuring the props object to get the onSubmit function
 function SearchBar({ onSubmit }) {
 
-  const handleClick = () => {
-    console.log('I need to tell parent to do a search!');
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+
     onSubmit('dogs');
   }
 
   return <div>
-    <input></input>
-      <button onClick={handleClick}>Click me</button>
-    
+    <form onSubmit={handleFormSubmit}>
+      <input/>
+    </form>
   </div>;
 }
 

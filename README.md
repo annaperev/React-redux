@@ -26,6 +26,9 @@
   - [Event system](#event-system)
   - [State](#state)
   - [Array destructuring](#array-destructuring)
+- [Using API with React](#using-api-with-react)
+  - [Child To Parent Communication](#child-to-parent-communication)
+  - [Form submission](#form-submission)
 
 # React-redux
 https://www.udemy.com/course/react-redux/ by Stephen Grider
@@ -272,3 +275,34 @@ function App() {
 ```
 
 '[ ]' do not create the array, 
+
+
+# Using API with React
+### Child To Parent Communication
+
+Prop system is usually used to communicate from a parent down to a child
+<img src="readme/screenshot-www.udemy.com-2024.06.12-09_20_58.png " width="200">
+
+Documentation says that the prop system is only for parent to child communication. That's not super accurate.
+
+This is also ok:
+<img src="readme/screenshot-www.udemy.com-2024.06.12-09_24_39.png " width="600">
+
+ This is a normal event handler between app component and JSX element - button. 
+ 
+ If we want to detect a click event on a button, we can define some kind of **callback** inside the app component and pass it down to the button through the prop system. 
+
+We pass it down as prop named onClick. It could be any name, the only requirement is the name should match up how we are going to recieve it in child component. 
+
+### Form submission
+
+about ``event.preventDefault();``
+
+<img src="readme/screenshot-www.udemy.com-2024.05.16-09_48_29.png " width="600">
+
+This is entirely a standard thing inside of HTML.
+If you ever place an input element inside of a form element and then select that input element and press the enter key, the browser not only triggers a submit event on the form. When you press the enter key or click on the submit button, the browser:
+ - is going to attempt to collect all the information from the inputs inside this form 
+ - and then make a network request with them.
+
+ to prevent making net request we call event.preventDefault();
