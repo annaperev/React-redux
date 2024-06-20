@@ -4,7 +4,7 @@ import SearchBar from './components/SearchBar';
 function App() {
   const handleSubmit = (term) => {
     console.log('Do a search for:', term);
-    // searchImages(term);
+    searchImages(term);
   }
 
   return (

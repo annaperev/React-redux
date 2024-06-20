@@ -28,7 +28,9 @@
   - [Array destructuring](#array-destructuring)
 - [Using API with React](#using-api-with-react)
   - [Child To Parent Communication](#child-to-parent-communication)
-  - [Form submission](#form-submission)
+  - [Form submission](#form-submission) 
+  - [Handling Input Elements](#handling-input-elements)
+
 
 # React-redux
 https://www.udemy.com/course/react-redux/ by Stephen Grider
@@ -306,3 +308,8 @@ If you ever place an input element inside of a form element and then select that
  - and then make a network request with them.
 
  to prevent making net request we call event.preventDefault();
+
+
+ ### Handling Input Elements
+
+ <img src="readme/screenshot-www.udemy.com-2024.06.15-14_58_15.png " width="600">
