@@ -313,3 +313,7 @@ If you ever place an input element inside of a form element and then select that
  ### Handling Input Elements
 
  <img src="readme/screenshot-www.udemy.com-2024.06.15-14_58_15.png " width="600">
+
+This is what happens whenever a user types inside the input. It's a cycle that's going to repeat itself, every time a user presses a character or changes really anything inside there.
+
+ <img src="readme/screenshot-www.udemy.com-2024.06.20-09_46_52.png " width="600">
