@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 
 // ({ onSubmit }) - this is destructuring the props object to get the onSubmit function

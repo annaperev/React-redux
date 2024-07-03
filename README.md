@@ -30,6 +30,7 @@
   - [Child To Parent Communication](#child-to-parent-communication)
   - [Form submission](#form-submission) 
   - [Handling Input Elements](#handling-input-elements)
+  - [Handling list update and notes on keys](#handling-list-update-and-notes-on-keys)
 
 
 # React-redux
@@ -317,3 +318,12 @@ If you ever place an input element inside of a form element and then select that
 This is what happens whenever a user types inside the input. It's a cycle that's going to repeat itself, every time a user presses a character or changes really anything inside there.
 
  <img src="readme/screenshot-www.udemy.com-2024.06.20-09_46_52.png " width="600">
+
+
+ ### Handling list update and notes on keys
+
+<img src="readme/screenshot-www.udemy.com-2024.07.03-15_37_13.png " width="600">
+
+
+
+<img src="readme/screenshot-www.udemy.com-2024.07.03-15_45_00.png" width="600">
