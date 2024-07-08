@@ -30,7 +30,8 @@
   - [Child To Parent Communication](#child-to-parent-communication)
   - [Form submission](#form-submission) 
   - [Handling Input Elements](#handling-input-elements)
-  - [Handling list update and notes on keys](#handling-list-update-and-notes-on-keys)
+  - [Handling list update](#handling-list-update)
+  - [Notes on keys](#notes-on-keys)
 
 
 # React-redux
@@ -320,10 +321,11 @@ This is what happens whenever a user types inside the input. It's a cycle that's
  <img src="readme/screenshot-www.udemy.com-2024.06.20-09_46_52.png " width="600">
 
 
- ### Handling list update and notes on keys
+ ### Handling list update
 
 <img src="readme/screenshot-www.udemy.com-2024.07.03-15_37_13.png " width="600">
 
 
+ ### Notes on keys
 
 <img src="readme/screenshot-www.udemy.com-2024.07.03-15_45_00.png" width="600">

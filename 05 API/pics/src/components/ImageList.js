@@ -1,3 +1,4 @@
+import "./ImageList.css";
 import React from "react";
 import ImageShow from "./ImageShow";
 
@@ -7,7 +8,7 @@ function ImageList({ images }) {
   }
   );
 
-    return <div>{renderedImages}</div>
+    return <div className="image-list">{renderedImages}</div>
   }
   
   export default ImageList;
