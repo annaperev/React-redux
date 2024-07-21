@@ -1,0 +1,28 @@
+GET http://localhost:3002/books HTTP/1.1
+Content-Type: application/json
+
+###
+#Create a new book
+POST http://localhost:3002/books HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "year": 1925
+}
+
+###
+#Update a book
+PUT http://localhost:3002/books/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "year": 1926
+}
+
+###
+DELETE http://localhost:3002/books/1 HTTP/1.1
+Content-Type: application/json

@@ -37,6 +37,9 @@
   - [Removing Elements From An Array](#removing-elements-from-an-array)
   - [Changing Elements](#changing-elements)
   - [Changing Properties In Objects](#changing-properties-in-objects)
+- [Data persistence with API request](#data-persistence-with-api-request)
+  - [JSON server](#json-server)
+  - [REST client](#rest-client)
 
 # React-redux
 https://www.udemy.com/course/react-redux/ by Stephen Grider
@@ -487,3 +490,73 @@ const removeColor = () => {
   setFruit(rest);
 };
 ```
+
+
+# Data persistence with API request
+### JSON server
+
+ <img src="readme/screenshot-www.udemy.com-2024.07.21-15_55_20.png " width="600">
+
+1. 
+```
+npm install json-server@0
+```
+
+2. create db.json file
+```
+{
+  "books": []
+}
+```
+3. in file package.json in section 'scripts' add
+```
+"server": "json-server -p 3002 --watch db.json",
+```
+-p 3002 should be any not busy port
+
+4. in new terminal do
+```
+npm server
+```
+to start the JSON server inner DB
+
+
+### REST client
+It's extention for VS code 
+
+1. install extention REST client
+2. create api.http file
+3. fill it like so
+```
+GET http://localhost:3002/books HTTP/1.1
+Content-Type: application/json
+
+###
+#Create a new book
+POST http://localhost:3002/books HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "year": 1925
+}
+
+###
+#Update a book
+PUT http://localhost:3002/books/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "year": 1926
+}
+
+###
+DELETE http://localhost:3002/books/1 HTTP/1.1
+Content-Type: application/json
+```
+
+4. above each link the button 'Send request' will appear. Push it and get an response on the right hand site 
+ 
