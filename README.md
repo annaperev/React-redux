@@ -40,6 +40,7 @@
 - [Data persistence with API request](#data-persistence-with-api-request)
   - [JSON server](#json-server)
   - [REST client](#rest-client)
+- [UseEffect](#useeffect)
 
 # React-redux
 https://www.udemy.com/course/react-redux/ by Stephen Grider
@@ -560,3 +561,103 @@ Content-Type: application/json
 
 4. above each link the button 'Send request' will appear. Push it and get an response on the right hand site 
  
+  # UseEffect
+
+  <img src="readme/screenshot-www.udemy.com-2024.07.23-09_39_39.png " width="600">
+
+  <img src="readme/screenshot-www.udemy.com-2024.07.23-09_54_47.png" width="600">
+
+  this small app show different cases how useEffect works
+  https://codepen.io/sgrider/pen/BarEowz?editors=1111
+
+App.js:
+  ```js
+  const { useState, useEffect } = React;
+
+function App() {
+  console.clear();
+  const [counterOne, setCounterOne] = useState(0);
+  const [counterTwo, setCounterTwo] = useState(0);  
+  
+  useEffect(() => {
+    console.log('Called once and never again')
+  },[]);
+  
+  useEffect(() => {
+    console.log('Called every time!')
+  });
+  
+   useEffect(() => {
+    console.log('CounterOne changed')
+  }, [counterOne]);
+  
+   useEffect(() => {
+    console.log('counterTwo changed')
+  }, [counterTwo]);
+  
+  useEffect(() => {
+    console.log('counterOne or counterTwo changed')
+  }, [counterOne, counterTwo]);
+  
+  return (
+    <div className="app">
+      <div>
+        <button onClick={() => setCounterOne(counterOne + 1)}>++ Counter One</button>               
+        <div>
+          Counter One Value:
+        </div>
+        <h3>{counterOne}</h3>
+      </div>
+      <span className="divide" />
+      <div>
+        <button onClick={() => setCounterTwo(counterTwo + 1)}>++ Counter Two</button>
+        <div>
+          Counter Two Value:
+        </div>
+        <h3>{counterTwo}</h3>
+      </div>
+    </div>
+  );
+}
+
+const el = document.querySelector('#root');
+const root = ReactDOM.createRoot(el);
+
+root.render(<App />);
+  ```
+App.css:
+```css
+* {
+  font-size: 28px;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.app > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app > div > div {
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 50px;
+  margin: 20px
+}
+
+.divide {
+  height: 300px;
+  border-left: 1px solid gray;
+}
+```
+index.html
+```html
+<div id="root"></div>
+```
