@@ -41,6 +41,7 @@
   - [JSON server](#json-server)
   - [REST client](#rest-client)
 - [UseEffect](#useeffect)
+- [Context](#context)
 
 # React-redux
 https://www.udemy.com/course/react-redux/ by Stephen Grider
@@ -661,3 +662,34 @@ index.html
 ```html
 <div id="root"></div>
 ```
+
+
+# Context
+
+  <img src="readme/screenshot-www.udemy.com-2024.07.24-16_10_42.png" width="600">
+
+Context is not replacement of Props system
+Context is not replacement of Redux
+
+Steps:
+  <img src="readme/screenshot-www.udemy.com-2024.07.24-16_14_42.png" width="600">
+
+  1. Create the context 
+  
+  Create new file:
+  ```js
+  import { createContext } from 'react';
+
+  const BookContext = createContext();
+  ```
+  BookContext object has 2 properties:
+  - Provider - react component used to specify what data we want to share 
+  - Consumer - react component used to get access to data. **Not offten used**
+
+  2. Specify the data that will be shared
+
+  <img src="readme/screenshot-www.udemy.com-2024.07.24-16_28_36.png" width="600">
+
+  3. Consume the data
+
+   <img src="readme/screenshot-www.udemy.com-2024.07.25-15_47_26.png" width="600">
